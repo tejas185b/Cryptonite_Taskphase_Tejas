@@ -68,4 +68,6 @@
 ###Finding files
 - Command: find / -name flag
 - Flag: pwn.college{I-biMHXa2Q2Sg0p-XwJw9Y8753w.dJzM4QDLxIjN0czW} 
-
+### Linking files
+- Command: ln -s /flag /home/hacker/not-the-flag
+- Flag: pwn.college{QrERiCzjsML5-rA5VeG_HIjeZSb.dlTM1UDLxIjN0czW}
