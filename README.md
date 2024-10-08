@@ -65,9 +65,32 @@
 ### Making directories
 - Command: mkdir /tmp/pwn , touch /tmp/pwn/college
 - Flag: pwn.college{czVjkA8qPofgsBPhV_NICtr4qJG.dFzM4QDLxIjN0czW}
-###Finding files
+### Finding files
 - Command: find / -name flag
 - Flag: pwn.college{I-biMHXa2Q2Sg0p-XwJw9Y8753w.dJzM4QDLxIjN0czW} 
 ### Linking files
 - Command: ln -s /flag /home/hacker/not-the-flag
 - Flag: pwn.college{QrERiCzjsML5-rA5VeG_HIjeZSb.dlTM1UDLxIjN0czW}
+
+## DIGESTING DOCUMENTATION
+### Learning from Documentation
+- Command: /challenge/challenge –giveflag
+- Flag: pwn.college{Iwy-Gz_nK0CMUUbaIdZo5f1jr8u.dRjM5QDLxIjN0czW}
+### Learning complex Usage
+- Command: /challenge/challenge --printfile /flag
+- Flag: pwn.college{cIJLz7eLeWZAMtgMDAXZDmV-f6A.dVjM5QDLxIjN0czW}
+### Reading Manuals
+- Command: /challenge/challenge --wunetp 862
+- Flag: pwn.college{wuP8P6Gnetp-ma2RGe41v2KZN6p.dRTM4QDLxIjN0czW}
+### Searching Manuals
+- Command: /challenge/challenge --vsdo
+- Flag: pwn.college{kOklujL48_J6H0izRTL_L0akP4M.dVTM4QDLxIjN0czW}
+### Searching for manuals
+- Command: 
+- Flag:
+### Helpful programs
+- Command: /challenge/challenge -p , /challenge/challenge --give-the-flag 856
+- Flag: pwn.college{Eg8Oc5nX6-DyBZvWItJzhNUvI65.ddjM4QDLxIjN0czW}
+### Help for bulletins
+- Command: help challenge , challenge --secret "c4J6eioo"
+- Flag: pwn.college{c4J6eiooBebte4zY3f6NEVAJfSB.dRTM5QDLxIjN0czW}
