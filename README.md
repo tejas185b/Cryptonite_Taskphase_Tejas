@@ -94,3 +94,57 @@
 ### Help for bulletins
 - Command: help challenge , challenge --secret "c4J6eioo"
 - Flag: pwn.college{c4J6eiooBebte4zY3f6NEVAJfSB.dRTM5QDLxIjN0czW}
+## FILE GLOBBING  
+
+### Matching with *
+- Command: cd /c* ,  ./r*
+- Flag: pwn.college{4zlJlzCX2e1UuTh2T8dKHXa6sH6.dFjM4QDLxIjN0czW}
+### Matching with ?
+- Command: cd /?ha??enge  , /challenge/run
+- Flag: pwn.college{w2jNRscLs3MaKJ2vD4msaEVEV5m.dJjM4QDLxIjN0czW}
+### Matching with []
+- Command: cd /challenge/files , /challenge/run file_[bash]
+- Flag: pwn.college{Uf9e3GifLkQUgl1p1Mbi1eOY7DZ.dNjM4QDLxIjN0czW}
+### Matching paths with []
+- Command: /challenge/run /challenge/files/file_[bash]
+- Flag: pwn.college{8umgoH0iUC_iXSsk01hNdH0cLCc.dRjM4QDLxIjN0czW}
+### Mixing globs
+- Command: cd /challenge/files , /challenge/run [cep]*
+- Flag: pwn.college{4SLqVmWA9nY8V-5ZLKHgqLRONKO.dVjM4QDLxIjN0czW}
+### Exclusionary globbing
+- Command: cd /challenge/files , 	/challenge/run [!pwn]*
+- Flag: pwn.college{USAJHRT2a9ZPxIuj3rsuRBArm20.dZjM4QDLxIjN0czW}
+## PRACTICING PIPING
+### Redirecting piping
+- Command: echo PWN > COLLEGE
+- Flag: pwn.college{cQY5cM_6j50SN2X6vW4bm6hmSBi.dRjN1QDLxIjN0czW}
+### Redirecting more output
+- Command: /challenge/run > myflag , cat myflag
+- Flag: pwn.college{ERKcCgHvdR9solH9s9JDBa-Zsai.dVjN1QDLxIjN0czW}
+### Appending output
+- Command: /challenge/run >> ~/the-flag , cat the-flag
+- Flag: pwn.college{QQ6r9CZAg3KeWFrr2mWgZAKaz2J.ddDM5QDLxIjN0czW}
+### Redirecting errors
+- Command: /challenge/run > myflag 2> instructions
+- Flag: pwn.college{UvMEyqMnzmX32X7DIIBbnkNoMdt.ddjN1QDLxIjN0czW}
+### Redirecting input
+- Command: echo COLLEGE > PWN , /challenge/run < PWN
+- Flag: pwn.college{8ye5GfV26XTqeuUE3iXNET3sihk.dBzN1QDLxIjN0czW}
+### Grepping stored stored
+- Command: /challenge/run > /tmp/data.txt , grep pwn.college /tmp/data.txt
+- Flag: pwn.college{4sJq9ehenpNHpRAqLmVk16NgF-A.dhTM4QDLxIjN0czW}
+### Grepping live output
+- Command: /challenge/run | grep pwn.college
+- Flag: pwn.college{sjDhZZPjgxAolPM2K3LWZMca1FO.dlTM4QDLxIjN0czW}
+### Grepping errors
+- Command: /challenge/run 2>&1 | grep pwn.college
+- Flag: pwn.college{AbMxsVApHr8PH6EVTFDAGuaGW1U.dVDM5QDLxIjN0czW}
+### Duplicating piped data with tee
+- Command: 
+- Flag:
+### Writing to multiple programs
+- Command: /challenge/hack | tee >(/challenge/the) >(/challenge/planet)
+- Flag: pwn.college{0Cm-Vn8O_fNxoQvF5tk46fyeHcG.dBDO0UDLxIjN0czW}
+### Split-piping stderr and stdout
+- Command: 
+- Flag: 
