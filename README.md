@@ -140,8 +140,8 @@
 - Command: /challenge/run 2>&1 | grep pwn.college
 - Flag: pwn.college{AbMxsVApHr8PH6EVTFDAGuaGW1U.dVDM5QDLxIjN0czW}
 ### Duplicating piped data with tee
-- Command: 
-- Flag:
+- Command: /challenge/pwn | tee cmd_1 | /challenge/college , cat cmd_1 , /challenge/pwn --secret EBtwsM9L | /challenge/college
+- Flag: pwn.college{EBtwsM9LZBKzGXjEV4RcIRzu0VO.dFjM5QDLxIjN0czW}
 ### Writing to multiple programs
 - Command: /challenge/hack | tee >(/challenge/the) >(/challenge/planet)
 - Flag: pwn.college{0Cm-Vn8O_fNxoQvF5tk46fyeHcG.dBDO0UDLxIjN0czW}
