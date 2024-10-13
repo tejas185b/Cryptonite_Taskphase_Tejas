@@ -146,5 +146,5 @@
 - Command: /challenge/hack | tee >(/challenge/the) >(/challenge/planet)
 - Flag: pwn.college{0Cm-Vn8O_fNxoQvF5tk46fyeHcG.dBDO0UDLxIjN0czW}
 ### Split-piping stderr and stdout
-- Command: 
-- Flag: 
+- Command: /challenge/hack > >(/challenge/planet) 2> >(/challenge/the) 
+- Flag: pwn.college{wybE1ta_AiCynJlO2loLYAg75yq.dFDNwYDLxIjN0czW}
