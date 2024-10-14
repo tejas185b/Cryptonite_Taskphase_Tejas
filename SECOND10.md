@@ -23,7 +23,34 @@
 ### Reading files
 - Command: read PWN < /challenge/read_me
 - Flag: pwn.college{0aGzBl5kRWv6Cge7VY6CxUEN12G.dBjM4QDLxIjN0czW}
-
+## PROCESSES AND JOBS
+### Listing processes
+- Command: ps -ef , /challenge/1153-run-14617
+- Flag:  pwn.college{EbuReluF-syFXISLhZJsPKy1Ie8.dhzM4QDLxIjN0czW}
+### Killing processes
+- Command: ps -ef , kill 73 , /challenge/run
+- Flag: pwn.college{wGH4QMa1Uph0fzquo-LMflw17fJ.dJDN4QDLxIjN0czW}
+### Interrupting processes
+- Command: /challenge/run , (ctrl +  c)
+- Flag: pwn.college{QrsODqa2pP3hp283u1W-jxESeFk.dNDN4QDLxIjN0czW}
+### Suspending processes
+- Command: /challenge/run , (ctrl + z) , /challenge/run
+- Flag: pwn.college{8NMyje8DhkG_Y8EvtfHx8WeO_Ig.dVDN4QDLxIjN0czW}
+### Resuming processes
+- Command: /challenge/run , (ctrl + z) , fg
+- Flag: pwn.college{cn2Ppeh4R_dQyHkp5BA-iMqHQRh.dZDN4QDLxIjN0czW}
+### Backgrounding processes
+- Command: /challenge/run , (ctrl + z) , bg , /challenge/run
+- Flag: pwn.college{8_VZmSyLxAvdeFPOe02EliRrAg9.ddDN4QDLxIjN0czW}
+### Foregrounding processes
+- Command:  /challenge/run , (ctrl + z) , bg , fg
+- Flag: pwn.college{8Ziieir3jXMnZmusUh3T1K3znfi.dhDN4QDLxIjN0czW}
+### Starting backgrounded process
+- Command: /challenge/run &
+- Flag: pwn.college{kUD57J31tfQtmuH_-2zuV3YhZEd.dlDN4QDLxIjN0czW}
+### Process exit codes
+- Command: /challenge/get-code $? , /challenge/submit-code $?
+- Flag: pwn.college{s6qkTW4CGFBLwPACJfC7LTazf7G.dljN4UDLxIjN0czW}
 ## PERCIEVING PERMISSIONS
 ### Changing file ownership
 - Command: chown hacker /flag , cat /flag
