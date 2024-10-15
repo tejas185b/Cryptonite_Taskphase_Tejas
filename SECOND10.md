@@ -102,6 +102,19 @@
 ### Executable shell scripts 
 -	Command: nano x.sh , write “/challenge/solve” , chmod a=rwx x.sh , ./x.sh
 -	Flag: pwn.college{MO339oA3fTa_XBjA-BkyuD7O-KV.dRzNyUDLxIjN0czW}
+## PONDERING PATH
+### The PATH variable
+-	Command: PATH="" , /challenge/run
+-	Flag: pwn.college{Asw1ni5HhWwp2dtXg_YZvJ6NbYK.dZzNwUDLxIjN0czW}
+### Setting PATH
+-	Command: PATH="/challenge/more_commands" , /challenge/run
+-	Flag: pwn.college{IAEvDa7BCVC3OO0lEX5mj0oWRDW.dVzNyUDLxIjN0czW}
+### Adding commands
+-	Command: find / -name cat , nano win , write “/usr/bin/cat /flag” in win , PATH="/home/hacker:$PATH" , chmod +x win , /challenge/run
+-	Flag:  pwn.college{0Tqzeai9wmbk0CozKG37hrkH9OM.dZzNyUDLxIjN0czW}
+### Hijacking commands
+-	Command: nano rm , write “/usr/bin/cat /flag” in rm , PATH="/home/hacker" , chmod +x rm , /challenge/run
+-	Flag: pwn.college{kYV6lrJZh8fZ2lOU9kze5mzRYg6.ddzNyUDLxIjN0czW}
 
 
 
