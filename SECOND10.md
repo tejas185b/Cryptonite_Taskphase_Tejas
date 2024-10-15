@@ -76,6 +76,32 @@
 ### The SUID bit
 - Command: chmod u+s /challenge/getroot ,  /challenge/getroot , cat /flag
 - Flag: pwn.college{ghG1tA9A-z-bSzR6xXbTZhof4NQ.dNTM2QDLxIjN0czW}
+## UNTANGLING USERS
+### Becoming root with su
+-	Command: su , enter pwd “hack-the-planet” ,  cat /flag
+-	Flag: pwn.college{A4MB3uKRTq_Di23ZJjuU_a1kMpw.dVTN0UDLxIjN0czW}
+### Other users with su
+-	Command: su zardus , , enter pwd “dont-hack-me” , /challenge/run  
+-	Flag: pwn.college{MN8niRIiv5jg-8O75mTU2MMEodW.dZTN0UDLxIjN0czW}
+### Cracking passwords
+-	Command:  john /challenge/shadow-leak , su zardus , enter pwd “aardvark” , /challenge/run
+-	Flag: pwn.college{Io3LdmIqzXizDtHHsZa73k5PQqs.ddTN0UDLxIjN0czW}
+### Using sudo
+-	Command: sudo cat /flag
+-	Flag: pwn.college{Ap0DHFQQKlCa-gJnYe2w4KOL8Sw.dhTN0UDLxIjN0czW}
+## CHAINING COMMANDS
+### Chaining with semicolons
+-	Command: /challenge/pwn; /challenge/college
+-	Flag: pwn.college{M7oiudnywJHKecgY5eSd2_AmrZr.dVTN4QDLxIjN0czW}
+### Your first shell script
+-	Command: nano x.sh , write in file “/challenge/pwn; /challenge/college” , bash x.sh
+-	Flag: pwn.college{srLMhgCnH4RFnk63Fv30lIRwbFc.dFzN4QDLxIjN0czW}
+### Redirecting script output
+-	Command: nano x.sh , write in file “/challenge/pwn; /challenge/college” , bash x.sh | /challenge solve
+-	Flag: pwn.college{QUTL5797pvxzpe1FEJFCc2Ok1UK.dhTM5QDLxIjN0czW}
+### Executable shell scripts 
+-	Command: nano x.sh , write “/challenge/solve” , chmod a=rwx x.sh , ./x.sh
+-	Flag: pwn.college{MO339oA3fTa_XBjA-BkyuD7O-KV.dRzNyUDLxIjN0czW}
 
 
 
