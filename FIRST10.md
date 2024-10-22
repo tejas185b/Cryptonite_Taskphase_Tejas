@@ -86,8 +86,8 @@
 - Command: /challenge/challenge --vsdo
 - Flag: pwn.college{kOklujL48_J6H0izRTL_L0akP4M.dVTM4QDLxIjN0czW}
 ### Searching for manuals
-- Command: 
-- Flag:
+- Command:  man man , man -k challenge, /challenge/challenge  --qwzxtv 587
+- Flag: pwn.college{MPq-XGMw5zKx87tEBv0GaCVVBnj.dZTM4QDLxIjN0czW}
 ### Helpful programs
 - Command: /challenge/challenge -p , /challenge/challenge --give-the-flag 856
 - Flag: pwn.college{Eg8Oc5nX6-DyBZvWItJzhNUvI65.ddjM4QDLxIjN0czW}
